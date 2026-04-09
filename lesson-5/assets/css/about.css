@@ -1,0 +1,538 @@
+/* ============================================
+   ABOUT PAGE STYLES
+   ============================================ */
+
+/* ============================================
+   PAGE HEADER
+   ============================================ */
+
+.page-header {
+    background: linear-gradient(135deg, rgba(45, 80, 22, 0.65), rgba(232, 150, 62, 0.65)), url('../images/aboiut-fruit-mixture.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--white);
+    padding: 120px var(--spacing-lg);
+    padding-top: 180px;
+    text-align: center;
+}
+
+.page-header h1 {
+    color: var(--white);
+    font-size: 56px;
+    margin-bottom: var(--spacing-md);
+}
+
+.header-subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+/* ============================================
+   OUR STORY SECTION
+   ============================================ */
+
+.our-story {
+    background-color: var(--white);
+}
+
+.our-story > .container {
+    position: relative;
+    z-index: 1;
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.story-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-lg);
+}
+
+.story-text p:first-child::first-letter {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--primary-green);
+}
+
+.story-image {
+    position: relative;
+}
+
+.story-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-lg);
+    position: relative;
+    display: inline-block;
+}
+
+.section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-orange);
+    border-radius: 0;
+}
+
+/* ============================================
+   MISSION & VALUES SECTION
+   ============================================ */
+
+.mission-values {
+    background-color: var(--light-gray);
+}
+
+.mission-statement {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    margin: var(--spacing-md) 0;
+    font-weight: 400;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.value-card {
+    background-color: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: 0;
+    border: 1px solid var(--medium-gray);
+    transition: var(--transition);
+}
+
+.value-card h3 {
+    color: var(--primary-green);
+    font-size: 20px;
+    margin-bottom: var(--spacing-md);
+}
+
+.value-card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* ============================================
+   WHY CHOOSE SECTION
+   ============================================ */
+
+.why-choose {
+    background-color: var(--white);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.benefit-item {
+    padding: var(--spacing-lg);
+    background-color: var(--white);
+    border-radius: 0;
+    transition: var(--transition);
+    border: 1px solid var(--primary-green);
+}
+
+.benefit-item h3 {
+    color: var(--primary-green);
+    font-size: 18px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.benefit-item p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* ============================================
+   TEAM SECTION
+   ============================================ */
+
+.team {
+    background-color: var(--light-gray);
+}
+
+.section-intro {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.team-card {
+    background-color: var(--white);
+    border-radius: 0;
+    overflow: hidden;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.team-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.team-card h3 {
+    color: var(--text-dark);
+    font-size: 20px;
+    padding: var(--spacing-lg) var(--spacing-md) 0;
+    margin-bottom: var(--spacing-sm);
+}
+
+.team-card .position {
+    color: var(--primary-orange);
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0 var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.team-card .bio {
+    color: #666;
+    font-size: 14px;
+    padding: 0 var(--spacing-md) var(--spacing-lg);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* ============================================
+   TESTIMONIALS SECTION
+   ============================================ */
+
+.testimonials {
+    background-color: var(--white);
+}
+
+.testimonial-carousel {
+    position: relative;
+    margin-top: var(--spacing-lg);
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonials-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.testimonial-card {
+    min-width: 100%;
+    background-color: var(--light-gray);
+    padding: var(--spacing-lg);
+    border-radius: 0;
+    border-left: 4px solid var(--primary-orange);
+    transition: var(--transition);
+}
+
+.carousel-button {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: var(--primary-green);
+    color: var(--white);
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 24px;
+    transition: var(--transition);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.carousel-button:hover {
+    background-color: var(--primary-orange);
+}
+
+.carousel-button.prev {
+    left: -20px;
+}
+
+.carousel-button.next {
+    right: -20px;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border: 2px solid var(--primary-green);
+    background-color: var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--transition);
+    padding: 0;
+}
+
+.dot.active {
+    background-color: var(--primary-green);
+}
+
+.testimonial-card .stars {
+    color: var(--primary-orange);
+    font-size: 16px;
+    margin-bottom: var(--spacing-md);
+}
+
+.testimonial-card .quote {
+    font-size: 15px;
+    color: #555;
+    font-style: italic;
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
+}
+
+.testimonial-card .customer-name {
+    color: var(--primary-green);
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* ============================================
+   STATISTICS SECTION
+   ============================================ */
+
+.statistics {
+    background: linear-gradient(135deg, rgba(45, 80, 22, 0.65), rgba(232, 150, 62, 0.65)), url('../images/aboiut-fruit-mixture.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--white);
+}
+
+.statistics h2 {
+    color: var(--white);
+}
+
+.statistics h2::after {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+    text-align: center;
+}
+
+.stat-item {
+    padding: var(--spacing-lg);
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: var(--spacing-sm);
+}
+
+.stat-label {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ============================================
+   CTA SECTION
+   ============================================ */
+
+.cta-section {
+    background-color: var(--light-gray);
+    text-align: center;
+    padding: var(--spacing-xxl) var(--spacing-lg);
+}
+
+.cta-section h2 {
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-md);
+}
+
+.cta-section h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cta-section p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: var(--spacing-lg);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-section .cta-button {
+    font-size: 18px;
+    padding: var(--spacing-md) var(--spacing-xl);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 100px var(--spacing-lg);
+        padding-top: 160px;
+        min-height: 320px;
+    }
+
+    .page-header h1 {
+        font-size: 42px;
+    }
+
+    .header-subtitle {
+        font-size: 16px;
+    }
+
+    .story-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .team-grid,
+    .benefits-grid,
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .carousel-button.prev {
+        left: 10px;
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+    }
+
+    .carousel-button.next {
+        right: 10px;
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-number {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header {
+        padding: 80px var(--spacing-md);
+        padding-top: 140px;
+        min-height: 280px;
+    }
+
+    .page-header h1 {
+        font-size: 28px;
+    }
+
+    .header-subtitle {
+        font-size: 14px;
+    }
+
+    .section h2 {
+        font-size: 24px;
+    }
+
+    .story-text p {
+        font-size: 14px;
+    }
+
+    .value-card h3,
+    .benefit-item h3,
+    .team-card h3 {
+        font-size: 16px;
+    }
+
+    .carousel-button.prev {
+        left: 5px;
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+    }
+
+    .carousel-button.next {
+        right: 5px;
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+    }
+
+    .carousel-dots {
+        gap: var(--spacing-sm);
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .cta-section h2 {
+        font-size: 24px;
+    }
+
+    .cta-section p {
+        font-size: 16px;
+    }
+
+    .stat-number {
+        font-size: 32px;
+    }
+
+    .stat-label {
+        font-size: 14px;
+    }
+}

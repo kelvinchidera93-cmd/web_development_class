@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Fruitella</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Fruitella</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Contact Us</h1>
+        <p class="header-subtitle">We'd love to hear from you. Get in touch with us today.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="order">Order Issue</option>
+                                <option value="delivery">Delivery Question</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us more about your inquiry..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-container">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="info-block">
+                        <h3>Direct Contact</h3>
+                        <p>
+                            <strong>Phone:</strong> <a href="tel:+15551234567">+1 (555) 123-4567</a><br>
+                            <strong>Email:</strong> <a href="mailto:contact@fruitella.com">contact@fruitella.com</a><br>
+                            <strong>Emergency:</strong> +1 (555) 123-4568
+                        </p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Store Address</h3>
+                        <p>
+                            Fruitella Fruit Market<br>
+                            123 Fresh Fruit Lane<br>
+                            Garden City, GC 45678<br>
+                            Country Name
+                        </p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Business Hours</h3>
+                        <p>
+                            <strong>Monday - Saturday:</strong> 8:00 AM - 6:00 PM<br>
+                            <strong>Sunday:</strong> 10:00 AM - 4:00 PM<br>
+                            <strong>Holidays:</strong> Closed<br>
+                            <strong>Delivery Orders:</strong> Available 24/7 online
+                        </p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Follow Us</h3>
+                        <div class="social-links-contact">
+                            <a href="#facebook" class="social-link-btn">Facebook</a>
+                            <a href="#instagram" class="social-link-btn">Instagram</a>
+                            <a href="#twitter" class="social-link-btn">Twitter</a>
+                            <a href="#linkedin" class="social-link-btn">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section map-section">
+        <h2>Find Us</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354340219386!2d144.95592631531563!3d-37.80787942021664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2s123%20Fresh%20Fruit%20Lane!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I place an order?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can place an order by visiting our store directly, calling us at +1 (555) 123-4567, or using our online ordering system available 24/7. For delivery orders, we accept online orders through our website or mobile app.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What are your delivery times?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer same-day delivery for orders placed before 12 PM. Standard delivery is available within 24-48 hours depending on location. Delivery fees vary based on distance. Check our delivery map for availability in your area.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you offer wholesale pricing?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We offer wholesale pricing for restaurants, juice bars, hotels, and other bulk buyers. Please contact our wholesale division at wholesale@fruitella.com or call +1 (555) 123-4567 ext. 2 for specific pricing and terms.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I report quality issues?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Your satisfaction is our priority. If you receive any fruit that doesn't meet our standards, please contact us within 24 hours with photos. We'll arrange a replacement or refund immediately. Email: quality@fruitella.com or call our quality team.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Are your fruits organic?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>While not all our fruits are certified organic, we work exclusively with farms that use sustainable and minimal pesticide practices. We highlight which fruits are organic certified. Please ask our staff for details about specific produce.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How should I store my fruits?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Storage depends on the fruit type. Generally, store fruits in a cool place away from direct sunlight. Most fruits last 3-7 days at room temperature, or longer in the refrigerator. Our staff can provide specific storage tips for each fruit you purchase.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you have subscription boxes?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We offer seasonal fruit subscription boxes delivered weekly or bi-weekly. Subscriptions include a curated selection of fresh seasonal fruits delivered directly to your door. Visit our store or call for subscription details and pricing.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I customize my order?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! We can customize orders for special occasions, dietary preferences, or specific needs. Call us in advance to discuss your requirements, and our team will ensure your order is exactly as you want it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section newsletter-section">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for weekly fruit tips, exclusive offers, recipes, and news about our latest produce.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Your email address" id="newsletter-email" name="email" required>
+                <button type="submit" class="newsletter-button">Subscribe</button>
+            </form>
+            <p class="form-note">We respect your privacy. Unsubscribe at any time.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Column 1: Quick Links -->
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 2: Contact Info -->
+            <div class="footer-column">
+                <h4>Contact Info</h4>
+                <p>
+                    <strong>Phone:</strong> +1 (555) 123-4567<br>
+                    <strong>Email:</strong> contact@fruitella.com<br>
+                    <strong>Address:</strong> 123 Fresh Fruit Lane, Garden City, GC 45678
+                </p>
+            </div>
+
+            <!-- Column 3: Business Hours -->
+            <div class="footer-column">
+                <h4>Business Hours</h4>
+                <p>
+                    <strong>Monday - Saturday:</strong> 8:00 AM - 6:00 PM<br>
+                    <strong>Sunday:</strong> 10:00 AM - 4:00 PM<br>
+                    <strong>Closed on Public Holidays</strong>
+                </p>
+            </div>
+
+            <!-- Column 4: Social Media -->
+            <div class="footer-column">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#facebook" class="social-link">Facebook</a>
+                    <a href="#instagram" class="social-link">Instagram</a>
+                    <a href="#twitter" class="social-link">Twitter</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Fruitella - Fresh Fruits, Freshly Delivered. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Handle contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formMessage = document.getElementById('formMessage');
+            formMessage.style.display = 'block';
+            formMessage.style.color = '#4A7C2C';
+            formMessage.textContent = 'Thank you for your message! We will get back to you within 24 hours.';
+            this.reset();
+            setTimeout(() => {
+                formMessage.style.display = 'none';
+            }, 5000);
+        });
+
+        // Handle newsletter form submission
+        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('newsletter-email').value;
+            alert('Thank you for subscribing! Check your email for confirmation.');
+            this.reset();
+        });
+
+        // FAQ Accordion Toggle
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', function() {
+                const faqItem = this.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all other items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Open clicked item if it wasn't already open
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
+        // Hamburger Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

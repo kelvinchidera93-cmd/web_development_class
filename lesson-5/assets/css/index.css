@@ -1,0 +1,336 @@
+/* ============================================
+   INDEX PAGE STYLES - Landing Page
+   ============================================ */
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(45, 80, 22, 0.3), rgba(232, 150, 62, 0.2)), url('../images/hero-fruit-basket.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    overflow: hidden;
+    padding-top: 60px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    animation: fadeInUp 1s ease;
+}
+
+.hero-title {
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.1;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    color: var(--white);
+}
+
+.hero-tagline {
+    font-size: 28px;
+    margin-bottom: var(--spacing-lg);
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content .cta-button {
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: 18px;
+    animation: fadeInUp 1s ease 0.2s both;
+    font-weight: 500;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================================
+   FRUIT SHOWCASE SECTION
+   ============================================ */
+
+.fruit-showcase {
+    background-color: var(--white);
+}
+
+.fruit-section {
+    display: flex;
+    align-items: stretch;
+    min-height: 500px;
+    margin: 0;
+}
+
+.fruit-image-container {
+    flex: 1;
+    flex-basis: 50%;
+    min-width: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.fruit-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.fruit-image-container:hover img {
+    opacity: 1;
+}
+
+.apple-background {
+    background-color: #E8D4C4;
+}
+
+.mango-background {
+    background-color: #FCE4B6;
+}
+
+.lemon-background {
+    background-color: #FFFACD;
+}
+
+.pineapple-background {
+    background-color: #FFE4B5;
+}
+
+.oranges-background {
+    background-color: #FFE5CC;
+}
+
+.fruit-content {
+    flex: 1;
+    flex-basis: 50%;
+    min-width: 0;
+    padding: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--white);
+}
+
+.fruit-content h2 {
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-md);
+    font-size: 32px;
+}
+
+.fruit-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.8;
+}
+
+.fruit-content h3 {
+    color: var(--primary-orange);
+    font-size: 18px;
+    margin-bottom: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits-list li {
+    padding-left: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    position: relative;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.benefits-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-green);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Alternating Layouts */
+
+.fruit-section-1 {
+    flex-direction: row;
+}
+
+.fruit-section-2 {
+    flex-direction: row-reverse;
+    background-color: var(--light-gray);
+}
+
+.fruit-section-2 .fruit-content {
+    background-color: var(--light-gray);
+}
+
+.fruit-section-3 {
+    flex-direction: row;
+}
+
+.fruit-section-4 {
+    flex-direction: row-reverse;
+    background-color: var(--light-gray);
+}
+
+.fruit-section-4 .fruit-content {
+    background-color: var(--light-gray);
+}
+
+.fruit-section-5 {
+    flex-direction: row;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 56px;
+    }
+
+    .hero-tagline {
+        font-size: 22px;
+    }
+
+    .fruit-section {
+        min-height: 450px;
+    }
+
+    .fruit-content {
+        padding: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        margin-top: 50px;
+        height: 80vh;
+    }
+
+    .hero-title {
+        font-size: 44px;
+    }
+
+    .hero-tagline {
+        font-size: 18px;
+    }
+
+    .fruit-section {
+        flex-direction: column-reverse !important;
+        min-height: auto;
+    }
+
+    .fruit-section-2,
+    .fruit-section-4 {
+        flex-direction: column-reverse !important;
+    }
+
+    .fruit-image-container {
+        height: 300px;
+        width: 100%;
+    }
+
+    .fruit-content {
+        padding: var(--spacing-lg);
+    }
+
+    .fruit-content h2 {
+        font-size: 26px;
+    }
+
+    .fruit-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding-top: 45px;
+        height: 70vh;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-tagline {
+        font-size: 16px;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .hero-content .cta-button {
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: 14px;
+    }
+
+    .fruit-section {
+        flex-direction: column-reverse !important;
+        min-height: auto;
+    }
+
+    .fruit-image-container {
+        height: 250px;
+    }
+
+    .fruit-content {
+        padding: var(--spacing-md);
+    }
+
+    .fruit-content h2 {
+        font-size: 22px;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .fruit-content p {
+        font-size: 13px;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .benefits-list li {
+        padding-left: var(--spacing-md);
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+}
