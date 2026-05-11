@@ -171,8 +171,12 @@ body {
 }
 
 .checkmark {
-    font-size: 1.5rem;
-    font-weight: bold;
+    width: 1.5rem;
+    height: 1.5rem;
+    stroke: var(--primary-color);
+    color: var(--primary-color);
+    display: inline-block;
+    margin-right: 0.5rem;
 }
 
 /* Scroll Indicator */
@@ -232,6 +236,10 @@ body {
 .icon {
     font-size: 3rem;
     margin-bottom: 1rem;
+    width: 3rem;
+    height: 3rem;
+    stroke: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .about-card h3 {
@@ -281,6 +289,10 @@ body {
 .service-icon {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    stroke: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .service-card h3 {
@@ -353,6 +365,10 @@ body {
 
 .contact-icon {
     font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+    stroke: var(--primary-color);
+    color: var(--primary-color);
 }
 
 /* Map Container */
