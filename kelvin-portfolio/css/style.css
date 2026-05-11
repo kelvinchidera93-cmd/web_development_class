@@ -424,6 +424,29 @@ body {
     gap: 1rem;
 }
 
+.social-icon {
+    width: 2rem;
+    height: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.social-icon svg {
+    width: 1rem;
+    height: 1rem;
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
